@@ -1,0 +1,205 @@
+:root {
+    /* light mode color defaults */
+    --background: rgb(255, 255, 255);
+    --text: rgb(0, 0, 0);
+    --accent: rgb(67, 192, 98);
+    --box-background: rgb(200,200,200)
+
+    --text-selected: var(--text);
+    --text-selected-background: var(--accent);
+
+    --link: var(--text);
+    --link-visited: var(--text);
+    --link-hover: var(--text);
+    --link-hover-background: var(--accent);
+
+    --mark: var(--text);
+    --mark-background: var(--accent);
+
+    --code: var(--accent);
+    --code-background: transparent;
+
+    --samp: var(--accent);
+    --samp-background: transparent;
+
+    --var: var(--accent);
+    --var-background: transparent;
+
+    --kbd: var(--accent);
+    --kbd-background: transparent;
+    --kbd-border: var(--accent);
+
+    --blockquote: var(--text);
+    --blockquote-background: var(--box-background);
+    --blockquote-border: var(--accent);
+
+    /* font */
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-mono: monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    /* darkmode colors */
+    --background: rgb(18,18,18);
+    --text: rgb(255,255,255);
+    --accent: rgb(96, 82, 224);
+    --box-background: rgb(27, 27, 27);
+
+    --text-selected: var(--text);
+    --text-selected-background: var(--accent);
+
+    --link: var(--text);
+    --link-visited: var(--text);
+    --link-hover: var(--text);
+    --link-hover-background: var(--accent);
+
+    --mark: var(--text);
+    --mark-background: var(--accent);
+
+    --code: var(--accent);
+    --code-background: transparent;
+
+    --samp: var(--accent);
+    --samp-background: transparent;
+
+    --var: var(--accent);
+    --var-background: transparent;
+
+    --kbd: var(--accent);
+    --kbd-background: transparent;
+    --kbd-border: var(--accent);
+
+    --blockquote: var(--text);
+    --blockquote-background: var(--box-background);
+    --blockquote-border: var(--accent);
+    }
+}
+
+/* selected text color*/
+::selection {
+    color: var(--text-selected);
+    background-color: var(--text-selected-background);
+
+}
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+
+    font-size: 1.15rem;
+    line-height: 1.5;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+
+    padding: 10px;
+}
+
+/* header sizes */
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+/* link style  */
+a {
+    text-decoration: underline;
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover {
+    color: var(--link-hover);
+    background-color: var(--link-hover-background);
+}
+
+/* mark style */
+mark {
+    color: var(--mark);
+    background-color: var(--mark-background);
+}
+
+/* code, samp, pre & kbd style */
+code {
+    font-family: var(--font-mono);
+    color: var(--code);
+    background-color: var(--code-background);
+}
+
+samp {
+    font-family: var(--font-mono);
+    color: var(--samp);
+    background-color: var(--samp-background);
+}
+
+var {
+    color: var(--var);
+    background-color: var(--var-background);
+}
+
+/* !!! TODO !!! */
+
+pre {
+
+}
+
+kbd {
+    font-family: var(--font-mono);
+    color: var(--kbd);
+    background-color: var(--kbd-background);
+    border: 1px solid var(--kbd-border);
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* blockquote style */
+blockquote {
+    color: var(--blockquote);
+    background-color: var(--blockquote-background);
+    border-left: 3px solid var(--blockquote-border);
+
+    padding-left: .4rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
