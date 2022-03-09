@@ -7,11 +7,13 @@
 
     --text-selected: var(--text);
     --text-selected-background: var(--accent);
+    --text-footer: rgb(98, 98, 98);
 
     --link: var(--text);
     --link-visited: var(--text);
     --link-hover: var(--text);
     --link-hover-background: var(--accent);
+    --link-footer: var(--text-footer);
 
     --mark: var(--text);
     --mark-background: var(--accent);
@@ -54,11 +56,13 @@
 
     --text-selected: var(--text);
     --text-selected-background: var(--accent);
+    --text-footer: rgb(39, 39, 39);
 
     --link: var(--text);
     --link-visited: var(--text);
     --link-hover: var(--text);
     --link-hover-background: var(--accent);
+    --link-footer: var(--text-footer);
 
     --mark: var(--text);
     --mark-background: var(--accent);
@@ -108,7 +112,7 @@ body {
     color: var(--text);
     background-color: var(--background);
 
-    font-size: 1.15rem;
+    font-size: 1.034rem;
     line-height: 1.5;
 
     margin-left: auto;
@@ -204,9 +208,9 @@ blockquote {
     border-left: 3px solid var(--blockquote-border);
     border-radius: 1px;
 
-    padding-left: .4rem;
-    padding-top: .3rem;
-    padding-bottom: .3rem;
+    padding-left: .8rem;
+    padding-top: .5rem;
+    padding-bottom: .7rem;
 
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -244,4 +248,17 @@ details {
 
 summary:hover {
     cursor: pointer;
+}
+
+/* footer styles */
+footer {
+    text-align: center;
+}
+
+footer > p {
+    color: var(--text-footer);
+}
+
+footer p > a, footer a, footer > a:visited, footer > p > a:visited {
+    color: var(--link-footer);
 }
