@@ -1,15 +1,18 @@
+/* TODO
+ - finish colors for every text tag
+ - set initial sizes for every text tag
+*/
+
+
 /* --- light theme base & accent colors --- */
 /* edit to your preference for systems with light mode preference */
 @media (prefers-color-scheme: light) {
     :root {
-        --text-base-color: rgb(0,0,0);
-        --text-accent-color: rgb(216, 54, 54);
-        
-        --text-selected-color: rgb(0,0,0);
-        --text-selected-background-color: rgb(216, 54, 54);
+        --base-color: rgb(0,0,0);
+        --accent-color: rgb(216, 54, 54);
         
         --background-base-color: rgb(255,255,255);
-        --background-accent-color: rgb(255,255,255);
+        --background-accent-color: rgb(202, 202, 202);
     }
 }
 
@@ -17,14 +20,11 @@
 /* edit to your preference for systems with dark mode preference*/
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-base-color: rgb(255,255,255);
-        --text-accent-color: rgb(85, 194, 71);
-
-        --text-selected-color: rgb(255,255,255);
-        --text-selected-background-color: rgb(216, 54, 54);
+        --base-color: rgb(255,255,255);
+        --accent-color: rgb(98, 83, 182);
         
         --background-base-color: rgb(18,18,18);
-        --background-accent-color: rgb(255,255,255);
+        --background-accent-color: rgb(29,29,29);
     }
 }
 
@@ -33,38 +33,6 @@
     /* fonts */
     --font-base-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --font-base-mono: monospace;
-
-    /* colors */
-    /*! only edit if you want specific colors on specific h tags */
-    /* h tags */
-    --h1-base-color: var(--text-base-color);
-    --h2-base-color: var(--text-base-color);
-    --h3-base-color: var(--text-base-color);
-    --h4-base-color: var(--text-base-color);
-    --h5-base-color: var(--text-base-color);
-    --h6-base-color: var(--text-base-color);
-
-    --h1-accent-color: var(--text-accent-color);
-    --h2-accent-color: var(--text-accent-color);
-    --h3-accent-color: var(--text-accent-color);
-    --h4-accent-color: var(--text-accent-color);
-    --h5-accent-color: var(--text-accent-color);
-    --h6-accent-color: var(--text-accent-color);
-
-    --h1-selected-color: var(--text-selected-color);
-    --h2-selected-color: var(--text-selected-color);
-    --h3-selected-color: var(--text-selected-color);
-    --h4-selected-color: var(--text-selected-color);
-    --h5-selected-color: var(--text-selected-color);
-    --h6-selected-color: var(--text-selected-color);
-
-    --h1-selected-background-color: var(--text-selected-background-color);
-    --h2-selected-background-color: var(--text-selected-background-color);
-    --h3-selected-background-color: var(--text-selected-background-color);
-    --h4-selected-background-color: var(--text-selected-background-color);
-    --h5-selected-background-color: var(--text-selected-background-color);
-    --h6-selected-background-color: var(--text-selected-background-color);
-
 }
 
 /* --- resets --- */
@@ -90,57 +58,167 @@ body {
     background-color: var(--background-base-color);
 }
 
-/* --- h tags, dont edit colors! --- */
-h1 {
-    color: var(--h1-base-color);
+
+/* selected text color */
+::selection {
+    color: var(--base-color);
+    background-color: var(--accent-color);
 }
 
-h1::selection {
-    color: var(--h1-selected-color);
-    background-color: var(--h1-selected-background-color);
+/* --- h tags --- */
+h1 {
+    color: var(--base-color);
+    font-size: 3.5rem;
 }
 
 h2 {
-    color: var(--h2-base-color);
-}
-
-h2::selection {
-    color: var(--h2-selected-color);
-    background-color: var(--h2-selected-background-color);
+    color: var(--base-color);
+    font-size: 3rem;
 }
 
 h3 {
-    color: var(--h3-base-color);
-}
-
-h3::selection {
-    color: var(--h3-selected-color);
-    background-color: var(--h3-selected-background-color);
+    color: var(--base-color);
+    font-size: 2.5rem;
 }
 
 h4 {
-    color: var(--h4-base-color);
-}
-
-h4::selection {
-    color: var(--h4-selected-color);
-    background-color: var(--h4-selected-background-color);
+    color: var(--base-color);
+    font-size: 2rem;
 }
 
 h5 {
-    color: var(--h5-base-color);
-}
-
-h5::selection {
-    color: var(--h5-selected-color);
-    background-color: var(--h5-selected-background-color);
+    color: var(--base-color);
+    font-size: 1.5rem;
 }
 
 h6 {
-    color: var(--h6-base-color);
+    color: var(--base-color);
+    font-size: 1.25rem;
 }
 
-h6::selection {
-    color: var(--h6-selected-color);
-    background-color: var(--h6-selected-background-color);
+/* --- p --- */
+p {
+    color: var(--base-color);
+}
+
+/* --- a --- */
+a {
+    color: var(--base-color);
+    text-decoration: underline;
+    transition-property: background-color;
+    transition-duration: 80ms;
+    transition-timing-function: ease-in;
+}
+
+a:visited {
+    color: var(--base-color);
+}
+
+a:hover {
+    background-color: var(--accent-color);
+}
+
+/* --- mark --- */
+mark {
+    color: var(--base-color);
+    background-color: var(--accent-color);
+}
+
+/* --- code --- */
+code {
+    color: var(--accent-color);
+    font-family: var(--font-base-mono);
+}
+
+/* --- samp  --- */
+samp {
+    color: var(--accent-color);
+    font-family: var(--font-base-mono);
+}
+
+/* --- var  --- */
+var {
+    color: var(--accent-color);
+}
+
+/* --- pre  --- */
+pre {
+    color: var(--accent-color);
+}
+
+/* kbd */
+kbd {
+    font-family: var(--font-base-mono);
+    color: var(--accent-color);
+    background-color: var(--kbd-background);
+    border: 1px solid var(--accent-color);
+    border-radius: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* --- blockquote  --- */
+blockquote {
+    color: var(--base-color);
+    background-color: var(--background-accent-color);
+    border-left: 3px solid var(--accent-color);
+    border-radius: 1px;
+    padding-left: .8rem;
+    padding-top: .5rem;
+    padding-bottom: .7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* --- abbr --- */
+abbr {
+    color: var(--base-color);
+    cursor: help;
+}
+
+/* --- hr  --- */
+hr {
+    border: 1px solid var(--background-accent-color);
+    border-top: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* --- details & summary --- */
+details {
+    color: var(--base-color);
+    background-color: var(--background-accent-color);
+    border-radius: 1px;
+    padding-left: .4rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+
+/* --- list styles --- */
+li {
+    color: var(--base-color);
+    list-style-position: inside;
+}
+
+footer {
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+footer > p {
+    color: var(--base-color);
+}
+
+footer p > a, footer a, footer > a:visited, footer > p > a:visited {
+    color: var(--base-color);
 }
