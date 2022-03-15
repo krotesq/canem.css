@@ -9,11 +9,11 @@
 @media (prefers-color-scheme: light) {
     :root {
         --base-color: rgb(0,0,0);
-        --accent-color: rgb(216,54,54);
+        --accent-color: rgb(95, 226, 139);
         --light-color: rgb(109, 109, 109);
         
         --background-base-color: rgb(255,255,255);
-        --background-accent-color: rgb(202,202,202);
+        --background-accent-color: rgb(230, 230, 230);
     }
 }
 
@@ -57,6 +57,9 @@ body {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+
+    /* padding */
+    padding: .5rem;
 
     /* set background color */
     background-color: var(--background-base-color);
@@ -214,13 +217,13 @@ summary:hover {
     cursor: pointer;
 }
 
-/* --- list styles --- */
+/* --- list --- */
 li {
     color: var(--base-color);
     list-style-position: inside;
 }
 
-/* table styles */
+/* table */
 table, th, td {
     color: var(--base-color);
     border: 1px solid var(--light-color);
@@ -236,7 +239,29 @@ th, td {
     padding: .5rem;
 }
 
-/* footer styles */
+/* nav */
+/* styles of specific tags are changed if parent is a nav tag */
+nav {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+nav h1 {
+    font-size: 3rem;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+}
+
+/* footer */
 footer {
     text-align: center;
     margin-top: .5rem;
