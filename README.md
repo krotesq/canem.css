@@ -27,6 +27,11 @@ Lightweight CSS Framework
 - nav
 - footer
 
+## TODO
+
+- fix footer
+- add custom boxes? classes?
+
 ## About
 
 Made with ♥ by [aaronlyy](https://github.com/aaronlyy) for [krotesq](https://github.com/krotesq)
