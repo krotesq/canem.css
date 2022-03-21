@@ -26,11 +26,14 @@ Lightweight CSS Framework
 - td
 - nav
 - footer
+- input (text)
+- input (submit)
+- button
+- textarea
 
 ## TODO
 
 - fix footer
-- add custom boxes? classes?
 
 ## About
 
