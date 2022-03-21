@@ -271,10 +271,10 @@ footer {
     transform: translate(-50%, 0);
 }
 
-footer > p {
+footer p {
     color: var(--light-color);
 }
 
-footer p > a, footer a, footer > a:visited, footer > p > a:visited {
+footer a, footer a:visited{
     color: var(--light-color);
 }
