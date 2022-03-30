@@ -1,39 +1,14 @@
-# canem.css - A classless CSS framework
+# canem.css - A classless CSS framewor
 
-Lightweight CSS Framework
+You write html, We do the rest
 
-## Currently supported html tags
+## Usage
 
-- h1 - h2
-- p
-- a
-- mark
-- code
-- samp
-- var
-- pre
-- kbd
-- blockquote
-- abbr
-- hr
-- details
-- summary
-- ul
-- ol
-- li
-- table
-- th
-- td
-- nav
-- footer
-- input (text)
-- input (submit)
-- button
-- textarea
+Add this line in your head tag and you're good to go!
 
-## TODO
-
-- fix footer
+```html
+<link rel="stylesheet" href="../canem.css">
+```
 
 ## About
 
