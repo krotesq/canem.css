@@ -13,7 +13,7 @@ add this line in your head tag and you're good to go!
 <link rel="stylesheet" href="https://krotesq.github.io/canem.css/canem.css">
 ```
 
-## TODO
+## todo
 
 - datalist
 - option
