@@ -1,6 +1,6 @@
 # canem.css - A simple classless CSS framework
 
-You write HTML, we do the rest!
+You write HTML, canem.css does the rest!
 
 ## Usage
 
