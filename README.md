@@ -15,8 +15,6 @@ add this line in your head tag and you're good to go!
 
 ## TODO
 
-html tags that need to be added:
-
 - datalist
 - option
 - input[type="checkbox"]
