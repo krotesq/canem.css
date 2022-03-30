@@ -1,4 +1,4 @@
-# canem.css - A classless CSS framewor
+# canem.css - A simple classless CSS framework
 
 You write HTML, we do the rest!
 
@@ -9,6 +9,14 @@ Add this line in your head tag and you're good to go!
 ```html
 <link rel="stylesheet" href="../canem.css">
 ```
+
+## TODO
+
+HTML tags that need to be added:
+
+- datalist
+- option
+- input[type="checkbox"]
 
 ## About
 
