@@ -20,6 +20,8 @@ html tags that need to be added:
 - datalist
 - option
 - input[type="checkbox"]
+- change color of nav > a if id is #nav-active
+- change default colors of nav > a
 
 ## about
 
