@@ -1,6 +1,6 @@
 # canem.css - A classless CSS framewor
 
-You write html, We do the rest
+You write HTML, we do the rest!
 
 ## Usage
 
