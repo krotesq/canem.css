@@ -1,10 +1,13 @@
-# canem.css - A simple classless CSS framework
+# canem.css - a simple classless css framework
 
-You write HTML, canem.css does the rest!
+- can be used to create simple, clean & small websites
+- supports light & dark color schemes, selected by system preference
+- custom styles for the nav tag to create simple navigations
 
-## Usage
 
-Add this line in your head tag and you're good to go!
+## usage
+
+add this line in your head tag and you're good to go!
 
 ```html
 <link rel="stylesheet" href="https://krotesq.github.io/canem.css/canem.css">
@@ -12,12 +15,12 @@ Add this line in your head tag and you're good to go!
 
 ## TODO
 
-HTML tags that need to be added:
+html tags that need to be added:
 
 - datalist
 - option
 - input[type="checkbox"]
 
-## About
+## about
 
-Made with ♥ by [aaronlyy](https://github.com/aaronlyy) for [krotesq](https://github.com/krotesq)
+made with ♥ by [aaronlyy](https://github.com/aaronlyy) for [krotesq](https://github.com/krotesq)
