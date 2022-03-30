@@ -7,7 +7,7 @@ You write HTML, canem.css does the rest!
 Add this line in your head tag and you're good to go!
 
 ```html
-<link rel="stylesheet" href="../canem.css">
+<link rel="stylesheet" href="https://krotesq.github.io/canem.css/canem.css">
 ```
 
 ## TODO
