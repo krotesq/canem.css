@@ -4,7 +4,6 @@
 - supports light & dark color schemes, selected by system preference
 - custom styles for the nav tag to create simple navigations
 
-
 ## usage
 
 add this line in your head tag and you're good to go!
