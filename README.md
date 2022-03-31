@@ -18,8 +18,6 @@ add this line in your head tag and you're good to go!
 - datalist
 - option
 - input[type="checkbox"]
-- change color of nav > a if id is #nav-active
-- change default colors of nav > a
 
 ## about
 
