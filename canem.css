@@ -19,11 +19,11 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --base-color: rgb(255, 255, 255);
-        --accent-color: rgb(99, 107, 219);
+        --accent-color: rgb(66, 136, 228);
         --light-color: rgb(58, 58, 58);
         --lighter-color:  rgb(139, 139, 139);
 
-        --selection-color: rgb(188, 130, 223);
+        --selection-color: rgb(40, 210, 226);
         
         --background-base-color: rgb(18,18,18);
         --background-accent-color: rgb(22, 22, 22);
@@ -109,8 +109,7 @@ h6 {
 /* --- a --- */
 a {
     color: var(--accent-color);
-    text-decoration: underline;
-    transition: background-color 100ms ease-in, color 100ms ease-in;
+    text-decoration: none;
 }
 
 a:visited {
@@ -118,9 +117,7 @@ a:visited {
 }
 
 a:hover {
-    background-color: var(--accent-color);
-    color: var(--base-color);
-    border-radius: 2px;
+    text-decoration: underline;
 }
 
 /* --- mark --- */
@@ -132,7 +129,7 @@ mark {
 
 /* --- code, samp, var, pre, kbd --- */
 code, samp, var, kbd {
-    color: var(--accent-color);
+    color: var(--lighter-color);
     background-color: var(--background-accent-color);
     font-family: var(--font-base-mono);
     border-radius: 2px;
@@ -232,14 +229,14 @@ th, td {
 /* input submit and button */
 input[type="submit"], button {
     color: var(--base-color);
-    background-color: var(--background-base-color);
+    background-color: transparent;
     border: 1px solid var(--accent-color);
     border-radius: 1px;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    transition: background-color 100ms ease-in;
+    transition: background-color 100ms ease-in, color 100ms ease-in;
 }
 
 input[type="submit"]:hover, button:hover {
@@ -293,6 +290,13 @@ nav li {
 
 nav a {
     font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+    background-color: transparent;
 }
 
 /* footer */
